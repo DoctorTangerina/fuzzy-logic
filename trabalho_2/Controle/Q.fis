@@ -5,11 +5,11 @@ Version=2.0
 NumInputs=2
 NumOutputs=1
 NumRules=7
-AndMethod='min'
+AndMethod='prod'
 OrMethod='max'
-ImpMethod='min'
+ImpMethod='prod'
 AggMethod='max'
-DefuzzMethod='mom'
+DefuzzMethod='centroid'
 
 [Input1]
 Name='level'
