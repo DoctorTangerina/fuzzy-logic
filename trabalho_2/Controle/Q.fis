@@ -15,11 +15,11 @@ DefuzzMethod='centroid'
 Name='level'
 Range=[-1 1]
 NumMFs=5
-MF1='neg_big':'trimf',[-1.5 -1 -0.5]
-MF2='ok':'trimf',[-0.5 0 0.5]
-MF3='pos_big':'trimf',[0.5 1 1.5]
-MF4='neg_small':'trimf',[-1 -0.5 0]
-MF5='pos_small':'trimf',[0 0.5 1]
+MF1='neg_big':'trapmf',[-1.45 -1.05 -0.6 -0.275]
+MF2='ok':'trimf',[-0.2 0 0.2]
+MF3='pos_big':'trapmf',[0.275 0.6 1.05 1.45]
+MF4='neg_small':'trimf',[-0.5 -0.25 0]
+MF5='pos_small':'trimf',[0 0.25 0.5]
 
 [Input2]
 Name='rate'
@@ -33,11 +33,11 @@ MF3='zero':'trimf',[-0.05 0 0.05]
 Name='valve'
 Range=[-1 1]
 NumMFs=5
-MF1='neg_high':'trimf',[-1.5 -1 -0.5]
-MF2='neg_small':'trimf',[-1 -0.5 0]
-MF3='ok':'trimf',[-0.5 0 0.5]
-MF4='pos_small':'trimf',[0 0.5 1]
-MF5='pos_high':'trimf',[0.5 1 1.5]
+MF1='neg_high':'trimf',[-1.49645390070922 -0.99645390070922 -0.420212765957447]
+MF2='neg_small':'trimf',[-0.988 -0.2 0]
+MF3='ok':'trimf',[-0.398936170212766 0 0.391843971631205]
+MF4='pos_small':'trimf',[0 0.2 1.01]
+MF5='pos_high':'trimf',[0.409574468085106 1 1.5]
 
 [Rules]
 2 3, 3 (1) : 1
